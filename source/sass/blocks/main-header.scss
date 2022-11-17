@@ -1,0 +1,15 @@
+.main-header {
+  padding: 35px 103px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  color: $color-font;
+}
+
+.main-header__container {
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

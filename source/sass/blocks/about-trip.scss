@@ -1,0 +1,14 @@
+.about-trip__container {
+  display: grid;
+  grid-template-columns: 1fr 560px;
+  column-gap: 88px;
+  align-items: center;
+}
+
+.about-trip__container h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  margin: 0;
+  margin-bottom: 40px;
+}

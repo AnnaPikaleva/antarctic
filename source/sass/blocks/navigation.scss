@@ -1,0 +1,24 @@
+.navigation {
+  max-width: 600px;
+}
+
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.navigation__item {
+  margin-right: 33px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.navigation__item a {
+  color: $color-font;
+  font-weight: 500;
+  line-height: 20px;
+}
