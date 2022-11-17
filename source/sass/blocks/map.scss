@@ -1,0 +1,16 @@
+.map {
+  min-height: 306px;
+  position: relative;
+}
+
+.map iframe {
+  width: 100%;
+}
+
+.map__icon {
+  position: absolute;
+  top: 43%;
+  left: 45%;
+  width: 18px;
+  height: 22px;
+}
