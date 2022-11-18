@@ -9,23 +9,40 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-      <header class="main-header">
+      <header class="main-header nojs">
         <div class="main-header__container container">
           <img class="main-header__logo" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
-          <nav class="main-header__nav navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item">
+          <nav class="main-header__nav nojs navigation">
+            <button class="navigation__button nojs" type="button">
+              <span class="visually-hidden">Открыть меню.</span>
+            </button>
+            <ul class="navigation__list site-list nojs">
+              <li class="navigation__item site-list__item">
                 <a href="#" data-link>Преимущества</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item site-list__item">
                 <a href="#" data-link>Направления</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item site-list__item">
                 <a href="#" data-link>Ближайшие круизы</a>
               </li>
-              <li class="navigation__item">
+              <li class="navigation__item site-list__item">
                 <a href="#" data-link>Контакты</a>
               </li>
+
+              <!-- <li class="navigation__item site-list__item">
+                <a href="#" data-link>Преимущества</a>
+              </li>
+              <li class="navigation__item site-list__item">
+                <a href="#" data-link>Направления</a>
+              </li>
+              <li class="navigation__item site-list__item">
+                <a href="#" data-link>Ближайшие круизы</a>
+              </li>
+              <li class="navigation__item site-list__item">
+                <a href="#" data-link>Контакты</a>
+              </li> -->
+
             </ul>
           </nav>
         </div>

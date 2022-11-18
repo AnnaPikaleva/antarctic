@@ -20,6 +20,20 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Открытие меню
+
+const navList = document.querySelector('.site-list');
+const logoImg = document.querySelector('.main-header__logo');
+const navButton = document.querySelector('.navigation__button');
+
+document.querySelectorAll('.nojs').forEach((item) => item.classList.remove('nojs'));
+
+navButton.addEventListener('click', function () {
+  navButton.classList.toggle('is-active');
+  navList.classList.toggle('is-active');
+  logoImg.classList.toggle('is-active');
+});
+
 // ---------------------------------
 
 // ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.

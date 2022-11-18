@@ -9,6 +9,9 @@
   width: 100%;
   padding: 11px 16px;
   cursor: pointer;
+  color: $color-font-dark;
+  font-size: 14px;
+  line-height: 21px;
 
   &::placeholder {
     font-size: 14px;
