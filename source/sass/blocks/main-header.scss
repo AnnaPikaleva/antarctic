@@ -21,7 +21,7 @@
     background-color: $color-blue;
 
     // Реализация по макету
-    // padding: 0;
+    padding: 0;
   }
 }
 
@@ -39,12 +39,12 @@
 
 .nojs .main-header__container {
   @media (max-width: $vp-767) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
 
     // Реализация как по макету
-    // display: block;
+    display: block;
   }
 }
 
@@ -63,11 +63,11 @@
 
 // Реализация как по макету
 
-// .nojs .main-header__logo {
-//   @media (max-width: $vp-767) {
-//     display: none;
-//   }
-// }
+.nojs .main-header__logo {
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
 
 .main-header__nav {
   @media (max-width: $vp-767) {

@@ -2,11 +2,15 @@
   @media (max-width: $vp-767) {
     position: relative;
     display: block;
-    padding: 10px;
-    padding-bottom: 8px;
+    padding: 15px 40px 13px 25px;
     font-size: 18px;
     line-height: 22px;
     color: $color-font-dark;
+
+    &:hover,
+    &:focus {
+      background-color: $color-hover;
+    }
   }
 }
 
@@ -21,10 +25,10 @@
     display: block;
     background-color: $color-font;
     min-height: 568px;
-    padding: 75px 30px 20px 15px;
+    padding: 75px 0 20px;
     position: absolute;
     top: 0;
-    right: 0;
+    right: -1px;
     width: 100%;
 
     &::before {
@@ -34,8 +38,8 @@
       width: 42px;
       height: 22px;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 20px;
+      left: 15px;
     }
   }
 }
@@ -43,43 +47,44 @@
 .site-list.nojs {
   position: static;
   display: block;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 290px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-top: 20px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // max-width: 290px;
+  // justify-content: flex-start;
+  // align-items: flex-start;
+  // margin-top: 20px;
 
 
 //Реализация как по макету
-// background-color: $color-font;
-  // padding: 75px 30px 20px 15px;
-  // margin-left: auto;
-  // width: 89%;
-  // position: relative;
+  background-color: $color-font;
+  padding: 75px 30px 20px 15px;
+  margin-left: auto;
+  width: 89%;
+  position: relative;
   // min-height: 568px;
 
-  // &::before {
-  //   content: "";
-  //   background-image: url("../img/svg/logo-dark.svg");
-  //   background-repeat: no-repeat;
-  //   width: 42px;
-  //   height: 22px;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  // }
+  &::before {
+    content: "";
+    background-image: url("../img/svg/logo-dark.svg");
+    background-repeat: no-repeat;
+    width: 42px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .site-list__item {
   @media (max-width: $vp-767) {
     margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
-.nojs a {
-  @media (max-width: $vp-767) {
-    color: $color-font;
-    text-align: center;
-  }
-}
+// .nojs a {
+//   @media (max-width: $vp-767) {
+//     color: $color-font;
+//     text-align: center;
+//   }
+// }
