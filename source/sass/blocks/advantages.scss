@@ -7,8 +7,16 @@
 }
 
 .advantages__container {
-  padding: 120px 103px;
+  padding: 110px 103px 118px;
   text-align: center;
+
+  @media (max-width: $vp-1023) {
+    padding: 90px 45px 100px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 56px 15px 65px;
+  }
 }
 
 .advantages__container h2 {
@@ -16,7 +24,18 @@
   line-height: 42px;
   font-weight: 600;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+
+  @media (max-width: $vp-1023) {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 30px;
+  }
 }
 
 .advantages__list {
@@ -25,19 +44,58 @@
   list-style: none;
   display: flex;
   gap: 40px;
+
+  @media (max-width: $vp-1023) {
+    gap: 30px;
+  }
+
+  @media (max-width: $vp-767) {
+    flex-direction: column;
+  }
 }
 
 .advantages__item {
   background-color: $color-font;
-  padding: 30px 30px 50px;
+  padding: 30px 30px 45px;
   text-align: left;
   // width: 360px;
   width: 79%;
 
+  @media (max-width: $vp-1023) {
+    width: 80%;
+    // width: 206px;
+    padding: 25px 15px 20px 20px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    padding: 25px 20px 20px;
+  }
 }
 
-.advantages__item svg {
-  margin-bottom: 25px;
+.advantages__img {
+  margin-bottom: 12px;
+
+  @media (max-width: $vp-1023) {
+    height: 26px;
+    margin-bottom: 12px;
+
+    &--cruise {
+      width: 21px;
+    }
+
+    &--ticks {
+      width: 27px;
+    }
+
+    &--boat {
+      width: 36px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 12px;
+  }
 }
 
 .advantages__item h3 {
@@ -45,9 +103,40 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
+  margin-bottom: 8px;
+
+  @media (max-width: $vp-1023) {
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: $vp-767) {
+    max-width: 170px;
+  }
+}
+
+.advantages__item br {
+  display: none;
+
+  @media (max-width: $vp-1023) {
+    display: inline;
+  }
+
+  @media (max-width: $vp-767) {
+
+  }
 }
 
 .advantages__item p {
   font-size: 14px;
   line-height: 20px;
+  margin: 0;
+
+  @media (max-width: $vp-1023) {
+    margin: 0;
+  }
+
+  @media (max-width: $vp-767) {
+
+  }
 }

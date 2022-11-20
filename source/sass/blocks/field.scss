@@ -1,7 +1,7 @@
 .field {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 19px;
 }
 
 .field input {
@@ -12,6 +12,8 @@
   color: $color-font-dark;
   font-size: 14px;
   line-height: 21px;
+  border: none;
+  margin-bottom: 1px;
 
   &::placeholder {
     font-size: 14px;
@@ -33,16 +35,30 @@
   align-items: center;
   position: relative;
   margin-bottom: 10px;
+  margin-top: -4px;
+
+  @media (max-width: $vp-1023) {
+    margin-bottom: 9px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: -1px;
+    // align-items: flex-start;
+  }
 }
 
 .field input[type="checkbox"] {
   position: absolute;
   opacity: 0;
-  top: 4px;
+  top: 0;
   left: 0;
   width: 18px;
   height: 18px;
   min-height: 14px;
+
+  @media (max-width: $vp-767) {
+
+  }
 }
 
 .field span {
@@ -50,9 +66,18 @@
     font-size: 10px;
     line-height: 13px;
     color: $color-font;
-    vertical-align: middle;
+    vertical-align: top;
     display: inline-block;
     padding-left: 23px;
+    // letter-spacing: 0.07em;
+
+    @media (max-width: $vp-767) {
+      letter-spacing: 0;
+      line-height: 12px;
+      // vertical-align: top;
+      text-align: left;
+      padding-left: 28px;
+    }
   }
 }
 
@@ -69,6 +94,12 @@
   // &:focus {
   //   // box-shadow: 0 2px 10px $color-default-white;
   // }
+
+  @media (max-width: $vp-767) {
+    width: 20px;
+    height: 20px;
+    top: 2px;
+  }
 }
 
 .field input[type="checkbox"]:checked + span {
@@ -94,10 +125,13 @@
 .field button {
   color: $color-font-dark;
   background-color: $color-font;
-  min-height: 43px;
+  min-height: 41px;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   cursor: pointer;
+  border: none;
+  // padding: 15px;
+  // margin-top: ;
 }

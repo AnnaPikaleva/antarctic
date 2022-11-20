@@ -8,7 +8,7 @@
   @media (max-width: $vp-767) {
     display: block;
     position: absolute;
-    top: 25px;
+    top: 27px;
     right: 15px;
     width: 30px;
     height: 30px;
@@ -36,6 +36,8 @@
   width: 16px;
   height: 16px;
   padding: 15px;
+  top: 20px;
+  right: 8px;
 
   &:hover,
   &:active {
@@ -52,27 +54,17 @@
   padding: 0;
   list-style: none;
   display: flex;
-
-  // @media (max-width: $vp-767) {
-  //   flex-direction: column;
-  //   padding: 75px 30px 20px 15px;
-  //   min-height: 568px;
-  //   background-color: $color-font;
-  //   position: absolute;
-  //   top: 0;
-
-  // }
 }
 
 .navigation__item {
-  margin-right: 33px;
+  margin-right: 34px;
 
   &:last-child {
     margin-right: 0;
   }
 
   @media (max-width: $vp-1023) {
-    margin-right: 23px;
+    margin-right: 24px;
   }
 
   @media (max-width: $vp-767) {
@@ -86,7 +78,7 @@
   line-height: 20px;
 
   @media (max-width: $vp-1023) {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 12px;
+    line-height: 14px;
   }
 }
