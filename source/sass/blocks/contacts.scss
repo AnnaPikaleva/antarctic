@@ -1,6 +1,10 @@
 .contacts {
   padding: 120px 103px 114px;
 
+  @media (max-width: $vp-1280) {
+    padding: 120px 73px 114px;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 100px 45px 93px;
   }
@@ -15,6 +19,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 45px;
   align-items: center;
+
+  @media (max-width: $vp-1200) {
+    gap: 30px;
+  }
 
   @media (max-width: $vp-1023) {
     gap: 30px;
@@ -33,6 +41,10 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media (max-width: $vp-1200) {
+    padding-left: 38px;
+  }
 
   @media (max-width: $vp-1023) {
     gap: 0;

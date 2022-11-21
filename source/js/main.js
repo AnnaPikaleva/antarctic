@@ -9,6 +9,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  changesMenu();
+  closeMenuLink();
+  closeMenu();
 
   // Modules
   // ---------------------------------
@@ -20,19 +23,47 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Открытие меню
+// Открытие/закрытие меню
 
 const navList = document.querySelector('.site-list');
-const logoImg = document.querySelector('.main-header__logo');
-const navButton = document.querySelector('.navigation__button');
+const menuOverlay = document.querySelector('.main-header__menu-overlay');
 
 document.querySelectorAll('.nojs').forEach((item) => item.classList.remove('nojs'));
 
-navButton.addEventListener('click', function () {
-  navButton.classList.toggle('is-active');
-  navList.classList.toggle('is-active');
-  logoImg.classList.toggle('is-active');
-});
+const changesMenu = () => {
+  const logoImg = document.querySelector('.main-header__logo');
+  const navButton = document.querySelector('.navigation__button');
+
+  navButton.addEventListener('click', function () {
+    navButton.classList.toggle('is-active');
+    navList.classList.toggle('is-active');
+    logoImg.classList.toggle('is-active');
+    document.body.classList.toggle('is-active');
+    menuOverlay.classList.toggle('is-active');
+  });
+};
+
+const closeMenu = () => {
+  menuOverlay.addEventListener('click', () => {
+    const activeItems = document.querySelectorAll('.is-active');
+    activeItems.forEach((item) => {
+      item.classList.remove('is-active');
+    });
+  });
+};
+
+const closeMenuLink = () => {
+  const links = document.querySelectorAll('[data-link]');
+
+  links.forEach((link) => {
+    link.addEventListener('click', () => {
+      const activeItems = document.querySelectorAll('.is-active');
+      activeItems.forEach((item) => {
+        item.classList.remove('is-active');
+      });
+    });
+  });
+};
 
 // Move to block
 
@@ -46,6 +77,17 @@ for (let anchor of anchors) {
       behavior: 'smooth',
       block: 'start',
     });
+  });
+}
+
+// Валидация поля
+
+const phoneInputs = document.querySelectorAll('input[data-tel]');
+
+for (let i = 0; i < phoneInputs.length; i++) {
+  let input = phoneInputs[i];
+  input.addEventListener('input', () => {
+    input.value = input.value.replace(/[^\d]/g, '');
   });
 }
 

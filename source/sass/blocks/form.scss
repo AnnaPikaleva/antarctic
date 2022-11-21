@@ -8,6 +8,10 @@
     background-image: url("../../img/form-background@2x.webp");
   }
 
+  @media (max-width: $vp-1280) {
+    padding: 51px 73px 50px;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 0;
   }
@@ -15,7 +19,7 @@
 
 .form__container {
   display: flex;
-  gap: 144px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
   min-height: 455px;
@@ -84,6 +88,11 @@
   box-sizing: border-box;
   padding: 45px 50px 50px;
   min-height: 455px;
+  margin-left: auto;
+
+  @media (max-width: $vp-1280) {
+    margin-left: 0;
+  }
 
   @media (max-width: $vp-767) {
     width: 100%;
@@ -111,7 +120,7 @@
   }
 }
 
-.form__text br {
+.form__container br {
   display: none;
 
   @media (max-width: $vp-767) {

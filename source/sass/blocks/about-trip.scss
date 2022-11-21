@@ -1,12 +1,17 @@
 .about-trip__container {
   display: grid;
-  grid-template-columns: 1fr 560px;
+  grid-template-columns: 1fr 1fr;
   column-gap: 88px;
   align-items: center;
 
+  @media (max-width: $vp-1200) {
+    column-gap: 44px;
+  }
+
+
   @media (max-width: $vp-1023) {
     column-gap: 25px;
-    grid-template-columns: 1fr 329px;
+    // grid-template-columns: 1fr 329px;
     align-items: flex-start;
   }
 

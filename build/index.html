@@ -11,9 +11,14 @@
   <body>
       <header class="main-header nojs">
         <div class="main-header__container container">
-          <img class="main-header__logo" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
+          <div class="main-header__menu-overlay" data-menu-button></div>
+          <div class="main-header__logo">
+            <svg width="70" height="38" viewBox="0 0 70 38" fill="currentColor" aria-label="Логотип круизов в Антарктику.">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </div>
           <nav class="main-header__nav nojs navigation">
-            <button class="navigation__button nojs" type="button">
+            <button class="navigation__button nojs" type="button" data-menu-button>
               <span class="visually-hidden">Открыть меню.</span>
             </button>
             <ul class="navigation__list site-list nojs">
@@ -24,7 +29,7 @@
                 <a href="#destination" data-link>Направления</a>
               </li>
               <li class="navigation__item site-list__item">
-                <a href="#destination" data-link>Ближайшие круизы</a>
+                <a href="#trip" data-link>Ближайшие круизы</a>
               </li>
               <li class="navigation__item site-list__item">
                 <a href="#form" data-link>Контакты</a>
@@ -55,7 +60,7 @@
           </div>
         </div>
         <section class="main-page__info about-trip">
-          <div class="about-trip__container container">
+          <div class="about-trip__container container" id="destination">
             <div class="about-trip__information">
               <h2>Путешествие<br> на край Земли</h2>
               <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
@@ -95,7 +100,7 @@
           </div>
         </section>
         <section class="main-page__catalog catalog">
-          <div class="catalog__container container" id="destination">
+          <div class="catalog__container container" id="trip">
             <h2>Ближайшие круизы</h2>
             <ul class="catalog__list">
               <li class="catalog__item catalog__item--card-1">

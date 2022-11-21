@@ -1,9 +1,13 @@
-.catalog__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.catalog {
   padding: 85px 118px 118px;
 
+  @media (max-width: $vp-1280) {
+    padding: 110px 73px 118px;
+  }
+
+  @media (max-width: $vp-1147) {
+    padding: 110px 45px 118px;
+  }
 
   @media (max-width: $vp-1023) {
     padding: 90px 60px 100px;
@@ -14,12 +18,20 @@
   }
 }
 
+.catalog__container {
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // padding: 85px 118px 118px;
+}
+
 .catalog__container h2 {
   margin: 0;
   margin-bottom: 50px;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
+  text-align: center;
 
   @media (max-width: $vp-1023) {
     font-size: 26px;
@@ -41,6 +53,12 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: $vp-1280) {
+    gap: 20px;
+  }
 
   @media (max-width: $vp-1023) {
     grid-template-columns: repeat(2,1fr);
@@ -60,7 +78,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 260px;
+  width: 100%;
   min-height: 386px;
   padding: 30px 30px 10px;
   box-sizing: border-box;
@@ -69,7 +87,8 @@
   position: relative;
 
   &:hover .catalog__more-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background-color: $color-font-dark;
     box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
     color: $color-font;
@@ -77,11 +96,10 @@
     top: 0;
     left: 0;
     padding: 28px 25px;
-    width: 260px;
-    min-height: 386px;
+    width: 100%;
+    max-height: 386px;
   }
 
-  @media (max-width: $vp-1024) {
     &--card-1 {
     background-image: url("../img/cards/card-desktop-1.png");
 
@@ -145,7 +163,10 @@
         background-image: url("../img/cards/card-desktop-7@2x.webp");
       }
     }
-  }
+
+    @media (max-width: $vp-1280) {
+      max-width: 260px;
+    }
 
   @media (max-width: $vp-1023) {
     width: 309px;
@@ -302,6 +323,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: scroll;
 }
 
 .catalog__item h3 {

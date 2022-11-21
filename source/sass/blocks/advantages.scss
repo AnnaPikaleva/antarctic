@@ -10,6 +10,10 @@
   padding: 110px 103px 118px;
   text-align: center;
 
+  @media (max-width: $vp-1200) {
+    padding: 110px 73px 118px;
+  }
+
   @media (max-width: $vp-1023) {
     padding: 90px 45px 100px;
   }
