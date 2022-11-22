@@ -14,7 +14,7 @@
 
     &:hover,
     &:focus {
-      background-color: $color-hover;
+      color: $color-hover;
     }
   }
 }
@@ -31,23 +31,12 @@
   @media (max-width: $vp-767) {
     display: block;
     background-color: $color-font;
-    padding: 70px 0 20px;
+    padding: 75px 0 20px;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     width: 89%;
-
-    &::before {
-      content: "";
-      background-image: url("../img/svg/logo-dark.svg");
-      background-repeat: no-repeat;
-      width: 42px;
-      height: 22px;
-      position: absolute;
-      top: 20px;
-      left: 15px;
-    }
   }
 }
 
@@ -70,16 +59,16 @@
   position: relative;
   // min-height: 568px;
 
-  &::before {
-    content: "";
-    background-image: url("../img/svg/logo-dark.svg");
-    background-repeat: no-repeat;
-    width: 42px;
-    height: 22px;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  // &::before {
+  //   content: "";
+  //   background-image: url("../img/svg/logo-dark.svg");
+  //   background-repeat: no-repeat;
+  //   width: 42px;
+  //   height: 22px;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  // }
 }
 
 .site-list__item {

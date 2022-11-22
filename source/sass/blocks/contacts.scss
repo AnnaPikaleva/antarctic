@@ -10,7 +10,7 @@
   }
 
   @media (max-width: $vp-767) {
-    padding: 59px 15px 60px;
+    padding: 59px 15px 67px;
   }
 }
 
@@ -103,6 +103,13 @@
     &::before {
       background-image: url("../img/svg/phone.svg");
       height: 18px;
+    }
+  }
+
+  &--tel a {
+    &:hover,
+    &:focus {
+      color: $color-hover;
     }
   }
 

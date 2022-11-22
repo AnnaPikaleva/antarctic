@@ -5,8 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Описание проекта">
-    <title>Круизы в Антарктику</title>
+    <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
+    <title>Круизы в Антарктику</title>
   </head>
   <body>
       <header class="main-header nojs">
@@ -55,18 +59,18 @@
       <main class="main-page">
         <div class="main-page__wrap">
           <div class="main-page__container container">
-            <h1>Круизы<br> в Антарктику</h1>
-            <p>Волшебный мир<br> айсбергов и пингвинов</p>
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
           </div>
         </div>
         <section class="main-page__info about-trip">
           <div class="about-trip__container container" id="destination">
             <div class="about-trip__information">
-              <h2>Путешествие<br> на край Земли</h2>
-              <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
             </div>
             <picture>
-              <!-- <source media="(max-width: 767px)" srcset="img/svg/logo.svg"> -->
+              <source type="image/webp" srcset="./img/penguins.webp, ./img/penguins@2.webp 2x ">
               <img src="./img/penguins.png" srcset="./img/penguins@2x.png 2x" width="560" height="301" alt="Пингвины.">
             </picture>
           </div>
@@ -80,21 +84,21 @@
                   <use xlink:href="img/sprite.svg#cruise-ship"></use>
                 </svg>
                 <h3>Небольшой круизный лайнер</h3>
-                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+                <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума&nbsp;и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__img advantages__img--ticks" width="38" height="32" viewBox="0 0 38 32" fill="currentColor">
                   <use xlink:href="img/sprite.svg#ticks"></use>
                 </svg>
-                <h3>Система<br> все включено</h3>
-                <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают&nbsp;по системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
               </li>
               <li class="advantages__item">
                 <svg class="advantages__img advantages__img--boat" width="44" height="32" viewBox="0 0 44 32" fill="currentColor">
                   <use xlink:href="img/sprite.svg#boat"></use>
                 </svg>
-                <h3>Экскурсионные туры на Zodiac</h3>
-                <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiack c опытными экскурсоводами.</p>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются&nbsp;на оборудованных лодках типа Zodiack c&nbsp;опытными экскурсоводами.</p>
               </li>
             </ul>
           </div>
@@ -103,7 +107,7 @@
           <div class="catalog__container container" id="trip">
             <h2>Ближайшие круизы</h2>
             <ul class="catalog__list">
-              <li class="catalog__item catalog__item--card-1">
+              <li class="catalog__item catalog__item--card-1" tabindex="0">
                 <h3>Круиз “Астория”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Астория”</h3>
@@ -128,7 +132,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-2">
+              <li class="catalog__item catalog__item--card-2" tabindex="0">
                 <h3>Круиз “Элайн”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Элайн”</h3>
@@ -153,14 +157,14 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-3">
+              <li class="catalog__item catalog__item--card-3" tabindex="0">
                 <h3>Круиз “Атлантис”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Атлантис”</h3>
                   <ul class="catalog__sublist">
                     <li class="catalog__subitem">
                       <h4>Маршрут</h4>
-                      <p>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</p>
+                      <p>Аргентина - Южная Георгия и&nbsp;Южные Сандвичевы Острова - Антарктида</p>
                     </li>
                     <li class="catalog__subitem">
                       <h4>Порт отправления</h4>
@@ -178,7 +182,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-4">
+              <li class="catalog__item catalog__item--card-4" tabindex="0">
                 <h3>Круиз “Одиссей”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Одиссей”</h3>
@@ -203,7 +207,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-5">
+              <li class="catalog__item catalog__item--card-5" tabindex="0">
                 <h3>Круиз “Олимпия”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Олимпия”</h3>
@@ -228,7 +232,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-6">
+              <li class="catalog__item catalog__item--card-6" tabindex="0">
                 <h3>Круиз “Аврора”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Аврора”</h3>
@@ -253,7 +257,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-7">
+              <li class="catalog__item catalog__item--card-7" tabindex="0">
                 <h3>Круиз “Леонор”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Леонор”</h3>
@@ -278,7 +282,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </li>
-              <li class="catalog__item catalog__item--card-8">
+              <li class="catalog__item catalog__item--card-8" tabindex="0">
                 <h3>Круиз “Минион - 1”</h3>
                 <div class="catalog__more-info">
                   <h3>Круиз “Минион - 1”</h3>
@@ -310,10 +314,10 @@
           <div class="form__container container" id="form">
             <div class="form__text">
               <h2>Раннее бронирование</h2>
-              <p>Забронируйте тур<br> за 3-6 месяцев до даты выезда<br> и сэкономьте до 50%</p>
+              <p>Забронируйте тур<br> за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
             <div class="form__wrapper">
-              <p>Оставьте заявку<br> и мы свяжемся с вами в ближайшее время</p>
+              <p>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               <form class="form__feedback field" action="https://echo.htmlacademy.ru" method="get" autocomplete="off" data-form>
                 <label>
                   <input type="text" name="name" placeholder="Имя" minlength="1" data-user-name required>
@@ -328,7 +332,7 @@
                   <label>
                     <input type="checkbox" name="checkbox" required>
                     <span class="field__control-mark"></span>
-                    <span>Я согласен на обработку<br> моих персональных данных</span>
+                    <span>Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</span>
                   </label>
                 </div>
                 <button type="submit" data-button>Оставить заявку</button>
@@ -342,17 +346,14 @@
             <div class="main-page__map map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2785.9557985233755!2d30.316419064784697!3d59.938413335027974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1668630205295!5m2!1sru!2s"
                width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              <picture>
-                <!-- <source media="(min-width: 768px)" srcset="img/index/map-pin.png 1x, img/index/map-pin@2x.png 2x"> -->
-                <img class="map__icon" src="./img/svg/pin.svg" width="18" height="22" alt="Расположение магазина.">
-              </picture>
+              <img class="map__icon" src="./img/svg/pin.svg" width="18" height="22" alt="Расположение магазина.">
             </div>
             <div class="contacts__info">
-              <p>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+              <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
               <address class="contacts__list">
                 <ul>
                   <li class="contacts__item contacts__item--location">
-                    г. Санкт Петербург,<br> ул. Большая Конюшенная, 19/8
+                    г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8
                   </li>
                   <li class="contacts__item contacts__item--tel">
                     <a href="tel:88002000000">8-800-200-00-00</a>
@@ -365,7 +366,11 @@
       </main>
       <footer class="main-footer">
         <div class="main-footer__container container">
-          <img class="main-footer__logo" src="./img/svg/logo.svg" width="70" height="38" alt="Логотип круизов в Антарктику.">
+          <div class="main-footer__logo">
+            <svg width="70" height="38" viewBox="0 0 70 38" fill="currentColor" aria-label="Логотип круизов в Антарктику.">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </div>
           <div class="main-footer__nav navigation-footer navigation">
             <ul class="navigation-footer__list navigation__list">
               <li class="navigation-footer__item navigation__item">
