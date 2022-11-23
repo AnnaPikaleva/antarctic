@@ -28,7 +28,7 @@
   @media (max-width: $vp-1023) {
     padding: 88px 65px 100px;
     flex-direction: column;
-    gap: 52px
+    gap: 52px;
   }
 
   @media (max-width: $vp-767) {
@@ -51,7 +51,6 @@
     text-align: center;
     margin: 0;
     margin-bottom: 5px;
-
   }
 
   @media (max-width: $vp-767) {
@@ -85,7 +84,7 @@
   width: 403px;
   text-align: center;
   background-color: $color-font-dark;
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-sizing: border-box;
   padding: 45px 50px 50px;
   min-height: 455px;
@@ -128,7 +127,3 @@
     display: inline;
   }
 }
-
-
-
-

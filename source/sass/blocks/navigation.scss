@@ -1,5 +1,5 @@
 .navigation {
-  max-width: 600px;
+  max-width: 596px;
 }
 
 .navigation__button {
@@ -7,37 +7,68 @@
 
   @media (max-width: $vp-767) {
     display: block;
-    position: absolute;
-    top: 20px;
-    right: 12px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 20px;
+    padding: 15px;
     cursor: pointer;
     border: none;
     background-color: transparent;
     z-index: 12;
-    background-image: url("../img/svg/open-button.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 24px;
-    height: 20px;
-    padding: 15px;
+    position: absolute;
+    top: 20px;
+    right: 12px;
+
+    &::before {
+      content: "";
+      background-color: $color-font;
+      width: 24px;
+      height: 2px;
+      position: absolute;
+      top: 8px;
+      left: 3px;
+      box-shadow: 0 6px 0 0 $color-font, 0 12px 0 0 $color-font;
+    }
+
+    &:hover::before {
+      background-color: $color-hover;
+      box-shadow: 0 6px 0 0 $color-hover, 0 12px 0 0 $color-hover;
+    }
   }
 }
 
 .navigation__button.is-active {
-  background-image: url("../img/svg/close-button.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   width: 16px;
   height: 16px;
   padding: 15px;
   top: 20px;
   right: 8px;
 
-  &:hover,
-  &:active {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    left: 7px;
+    width: 16px;
+    height: 2px;
+    background-color: $color-font-dark;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
     background-color: $color-hover;
+  }
+
+  &:hover::before {
+    background-color: $color-font-dark;
   }
 }
 
@@ -50,12 +81,13 @@
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation__item {
   margin-right: 34px;
 
-  &:last-child {
+  &:nth-child(4n) {
     margin-right: 0;
   }
 

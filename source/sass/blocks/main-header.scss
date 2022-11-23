@@ -4,7 +4,6 @@
   top: 0;
   z-index: 10;
   width: 100%;
-  color: $color-font;
 
   @media (max-width: $vp-1023) {
     padding: 28px 45px 30px 45px;
@@ -35,9 +34,8 @@
   }
 }
 
-.main-header__logo svg {
+.main-header__logo {
   fill: $color-font;
-  display: inline;
 
   @media (max-width: $vp-1023) {
     width: 38px;
@@ -54,14 +52,22 @@
   }
 }
 
-.main-header__logo.is-active svg {
+.main-header__logo.is-active {
   @media (max-width: $vp-767) {
     position: absolute;
     top: 0;
     left: 13%;
-    fill: black;
     z-index: 25;
+    fill: $color-font-dark;
   }
+}
+
+.main-header.nojs .main-header__logo {
+  position: absolute;
+  top: 10%;
+  left: 13%;
+  z-index: 25;
+  fill: $color-font-dark;
 }
 
 .main-header__nav.nojs {

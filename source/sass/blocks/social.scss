@@ -4,7 +4,7 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 400px;
+  max-width: 130px;
 
   @media (max-width: $vp-1023) {
     margin-top: 8px;
@@ -41,10 +41,6 @@
     width: 16px;
     height: 16px;
   }
-
-  @media (max-width: $vp-767) {
-
-  }
 }
 
 .social__link {
@@ -60,9 +56,5 @@
     &--ok svg {
       width: 10px;
     }
-  }
-
-  @media (max-width: $vp-767) {
-
   }
 }

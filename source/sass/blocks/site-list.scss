@@ -24,6 +24,7 @@
 
   @media (max-width: $vp-767) {
     display: none;
+    margin-top: 0;
   }
 }
 
@@ -31,7 +32,7 @@
   @media (max-width: $vp-767) {
     display: block;
     background-color: $color-font;
-    padding: 75px 0 20px;
+    padding: 70px 0 20px;
     position: fixed;
     top: 0;
     right: 0;
@@ -43,37 +44,18 @@
 .site-list.nojs {
   position: static;
   display: block;
-  // display: flex;
-  // flex-wrap: wrap;
-  // max-width: 290px;
-  // justify-content: flex-start;
-  // align-items: flex-start;
-  // margin-top: 20px;
-
-
-//Реализация как по макету
   background-color: $color-font;
   padding: 75px 30px 20px 15px;
   margin-left: auto;
   width: 98%;
-  position: relative;
-  // min-height: 568px;
-
-  // &::before {
-  //   content: "";
-  //   background-image: url("../img/svg/logo-dark.svg");
-  //   background-repeat: no-repeat;
-  //   width: 42px;
-  //   height: 22px;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  // }
 }
 
 .site-list__item {
+  margin-top: 6px;
+
   @media (max-width: $vp-767) {
     margin-right: 0;
     margin-bottom: 0;
+    margin-top: 0;
   }
 }

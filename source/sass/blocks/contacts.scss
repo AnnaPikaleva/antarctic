@@ -123,7 +123,6 @@
     &::before {
       top: 5px;
       left: 0;
-
     }
 
     &--tel {
@@ -132,10 +131,6 @@
       }
     }
   }
-
-  @media (max-width: $vp-767) {
-
-  }
 }
 
 .contacts__item br {
@@ -143,9 +138,5 @@
 
   @media (max-width: $vp-1023) {
     display: inline;
-  }
-
-  @media (max-width: $vp-767) {
-
   }
 }
