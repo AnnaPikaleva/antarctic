@@ -235,7 +235,7 @@ button,
 }
 
 .main-page__wrap {
-  background-image: url("../img/big-main-background.png");
+  background-image: url("../img/big-main-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -248,7 +248,7 @@ button,
 .main-page__container {
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 270px 198px 0;
+  padding: 270px 198px 30px;
 }
 
 .main-page__container h1 {
@@ -537,7 +537,6 @@ button,
   -ms-flex-pack: end;
   justify-content: flex-end;
   width: 100%;
-  min-height: 386px;
   padding: 30px 9px 10px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -545,6 +544,7 @@ button,
   background-size: cover;
   position: relative;
   background-color: #728ea7;
+  aspect-ratio: 260/386;
 }
 
 .catalog__item:hover .catalog__more-info,
@@ -568,35 +568,35 @@ button,
 }
 
 .catalog__item--card-1 {
-  background-image: url("../img/cards/card-desktop-1.png");
+  background-image: url("../img/cards/card-desktop-1.webp");
 }
 
 .catalog__item--card-2 {
-  background-image: url("../img/cards/card-desktop-7.png");
+  background-image: url("../img/cards/card-desktop-7.webp");
 }
 
 .catalog__item--card-3 {
-  background-image: url("../img/cards/card-desktop-2.png");
+  background-image: url("../img/cards/card-desktop-2.webp");
 }
 
 .catalog__item--card-4 {
-  background-image: url("../img/cards/card-desktop-3.png");
+  background-image: url("../img/cards/card-desktop-3.webp");
 }
 
 .catalog__item--card-5 {
-  background-image: url("../img/cards/card-desktop-4.png");
+  background-image: url("../img/cards/card-desktop-4.webp");
 }
 
 .catalog__item--card-6 {
-  background-image: url("../img/cards/card-desktop-6.png");
+  background-image: url("../img/cards/card-desktop-6.webp");
 }
 
 .catalog__item--card-7 {
-  background-image: url("../img/cards/card-desktop-5.png");
+  background-image: url("../img/cards/card-desktop-5.webp");
 }
 
 .catalog__item--card-8 {
-  background-image: url("../img/cards/card-desktop-7.png");
+  background-image: url("../img/cards/card-desktop-7.webp");
 }
 
 .catalog__sublist {
@@ -680,6 +680,7 @@ button,
   margin: 0;
   margin-top: -10px;
   margin-bottom: 8px;
+  max-width: 493px;
 }
 
 .form__container p {
@@ -1089,7 +1090,7 @@ button,
 @media (max-width: 1023px) {
   .main-page__wrap {
     min-height: 638px;
-    background-image: url("../img/small-main-background.png");
+    background-image: url("../img/small-main-background.webp");
     -webkit-filter: none;
     filter: none;
   }
@@ -1266,6 +1267,7 @@ button,
     text-align: center;
     margin: 0;
     margin-bottom: 5px;
+    max-width: none;
   }
 
   .form__container p {
@@ -1380,7 +1382,7 @@ button,
 @media (max-width: 767px) {
   .main-page__wrap {
     min-height: 500px;
-    background-image: url("../img/big-main-background.png");
+    background-image: url("../img/big-main-background.webp");
   }
 
   .main-page__container {
