@@ -21,9 +21,15 @@
 
 .social__item {
   margin-right: 8px;
+  margin-top: 6px;
 
   &:nth-child(3n) {
     margin-right: 0;
+
+  }
+
+  @media (max-width: $vp-1023) {
+    margin-top: 0;
   }
 
   @media (max-width: $vp-767) {

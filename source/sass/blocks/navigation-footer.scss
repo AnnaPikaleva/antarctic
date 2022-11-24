@@ -24,10 +24,10 @@
 }
 
 .navigation-footer .navigation-footer__item {
-  margin-top: 0;
+  margin-top: 3px;
 
   @media (max-width: $vp-1023) {
-    margin-top: 3px;
+    // margin-top: 3px;
   }
 
   @media (max-width: $vp-767) {
