@@ -5,6 +5,7 @@
 }
 
 .field input {
+  font-family: $ff-montserrat;
   min-height: 43px;
   width: 100%;
   padding: 11px 16px;
@@ -16,6 +17,7 @@
   margin-bottom: 1px;
 
   &::placeholder {
+    font-family: $ff-montserrat;
     font-size: 14px;
     color: $color-font-opacity;
   }
@@ -45,7 +47,6 @@
 
   @media (max-width: $vp-767) {
     margin-top: -1px;
-    // align-items: flex-start;
   }
 }
 
@@ -128,6 +129,7 @@
   text-align: center;
   cursor: pointer;
   border: none;
+  font-family: $ff-montserrat;
 
   &:hover,
   &:focus {

@@ -26,27 +26,6 @@
   }
 }
 
-.main-footer__nav {
-  padding-left: 40px;
-  max-width: 650px;
-
-  @media (max-width: $vp-1023) {
-    padding-left: 25px;
-  }
-
-  @media (max-width: $vp-767) {
-    padding-left: 0;
-  }
-}
-
-.main-footer__social {
-  margin-left: auto;
-
-  @media (max-width: $vp-767) {
-    margin-left: -10px;
-  }
-}
-
 .main-footer__logo svg {
   fill: $color-font;
 
@@ -59,7 +38,7 @@
   @media (max-width: $vp-767) {
     width: 42px;
     height: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 21px;
     margin-top: 0;
   }
 }

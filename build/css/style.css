@@ -361,7 +361,7 @@ button,
   display: none;
 }
 
-.navigation__list {
+.navigation ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -370,24 +370,26 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin-top: -5px;
 }
 
-.navigation__item {
+.navigation li {
   margin-right: 34px;
+  margin-top: 6px;
 }
 
-.navigation__item:nth-child(4n) {
+.navigation li:nth-child(4n) {
   margin-right: 0;
 }
 
-.navigation__item a {
+.navigation a {
   color: #f9fbfd;
   font-weight: 500;
   line-height: 20px;
 }
 
-.navigation__item a:hover,
-.navigation__item a:focus {
+.navigation a:hover,
+.navigation a:focus {
   color: #ec9913;
 }
 
@@ -551,10 +553,10 @@ button,
 .catalog__item:focus-within .catalog__more-info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: -webkit-min-content auto 43px;
-  -ms-grid-rows: min-content auto 43px;
-  grid-template-rows: -webkit-min-content auto 43px;
-  grid-template-rows: min-content auto 43px;
+  -ms-grid-rows: -webkit-min-content auto -webkit-min-content;
+  -ms-grid-rows: min-content auto min-content;
+  grid-template-rows: -webkit-min-content auto -webkit-min-content;
+  grid-template-rows: min-content auto min-content;
   background-color: #011c40;
   -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
@@ -653,7 +655,7 @@ button,
 
 .form {
   padding: 51px 163px 50px;
-  background-image: url("../../img/form-background.png");
+  background-image: url("../img/form-background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #b3d9ed;
@@ -726,6 +728,7 @@ button,
 }
 
 .field input {
+  font-family: "Montserrat", "Arial", sans-serif;
   min-height: 43px;
   width: 100%;
   padding: 11px 16px;
@@ -738,26 +741,31 @@ button,
 }
 
 .field input::-webkit-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 .field input::-moz-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 .field input:-ms-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 .field input::-ms-input-placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   color: rgba(1, 28, 64, 0.7);
 }
 
 .field input::placeholder {
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 14px;
   color: rgba(1, 28, 64, 0.7);
 }
@@ -853,6 +861,7 @@ button,
   text-align: center;
   cursor: pointer;
   border: none;
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 .field button:hover,
@@ -967,20 +976,11 @@ button,
   align-items: center;
 }
 
-.main-footer__nav {
-  padding-left: 40px;
-  max-width: 650px;
-}
-
-.main-footer__social {
-  margin-left: auto;
-}
-
 .main-footer__logo svg {
   fill: #f9fbfd;
 }
 
-.social__list {
+.social {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -990,6 +990,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   max-width: 130px;
+  margin-left: auto;
 }
 
 .social__item {
@@ -1016,25 +1017,33 @@ button,
   fill: #ec9913;
 }
 
-.site-list {
+.navigation-footer {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 40px;
+  max-width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: -5px;
 }
 
-.site-list.nojs {
-  position: static;
-  display: block;
-  background-color: #f9fbfd;
-  padding: 75px 30px 20px 15px;
-  margin-left: auto;
-  width: 98%;
+.navigation-footer .navigation-footer__item {
+  margin-top: 0;
 }
 
-.site-list__item {
-  margin-top: 6px;
+.navigation-footer.navigation a {
+  color: #f9fbfd;
+  font-weight: 500;
+  line-height: 20px;
 }
 
-.navigation-footer__list {
-  margin-top: -5px;
+.navigation-footer.navigation a:hover,
+.navigation-footer.navigation a:focus {
+  color: #ec9913;
 }
 
 @media (max-width: 1280px) {
@@ -1052,6 +1061,10 @@ button,
 
   .form {
     padding: 51px 73px 50px;
+  }
+
+  .form__container h2 {
+    max-width: 380px;
   }
 
   .form__wrapper {
@@ -1122,13 +1135,13 @@ button,
     height: 20px;
   }
 
-  .navigation__item {
+  .navigation li {
     margin-right: 24px;
   }
 
-  .navigation__item a {
-    font-size: 12px;
-    line-height: 14px;
+  .navigation a {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .about-trip__container {
@@ -1334,17 +1347,13 @@ button,
     padding: 43px 39px 50px 45px;
   }
 
-  .main-footer__nav {
-    padding-left: 25px;
-  }
-
   .main-footer__logo svg {
     width: 38px;
     height: 20px;
     margin-top: 6px;
   }
 
-  .social__list {
+  .social {
     margin-top: 8px;
     max-width: 100px;
   }
@@ -1362,14 +1371,19 @@ button,
     width: 10px;
   }
 
-  .site-list a {
-    font-size: 14px;
-    line-height: 17px;
+  .navigation-footer {
+    max-width: 500px;
+    padding-left: 25px;
   }
 
-  .navigation-footer__list {
-    max-width: 450px;
-    margin-top: 0;
+  .navigation-footer .navigation-footer__item {
+    margin-top: 3px;
+  }
+
+  .navigation-footer.navigation a {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0;
   }
 }
 
@@ -1484,8 +1498,40 @@ button,
     box-shadow: 0 6px 0 0 #ec9913, 0 12px 0 0 #ec9913;
   }
 
-  .navigation__item {
-    margin-bottom: 10px;
+  .navigation ul {
+    display: none;
+    margin-top: 0;
+  }
+
+  .navigation ul.is-active {
+    display: block;
+    background-color: #f9fbfd;
+    padding: 70px 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 89%;
+  }
+
+  .navigation li {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  .navigation a {
+    position: relative;
+    display: block;
+    padding: 15px 40px 13px 25px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #011c40;
+  }
+
+  .navigation a:hover,
+  .navigation a:focus {
+    color: #ec9913;
   }
 
   .about-trip__container {
@@ -1564,7 +1610,7 @@ button,
   }
 
   .catalog__item {
-    padding: 25px 25px 15px;
+    padding: 25px 25px 16px;
     aspect-ratio: 270/386;
   }
 
@@ -1680,68 +1726,24 @@ button,
     align-items: flex-start;
   }
 
-  .main-footer__nav {
-    padding-left: 0;
-  }
-
-  .main-footer__social {
-    margin-left: -10px;
-  }
-
   .main-footer__logo svg {
     width: 42px;
     height: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 21px;
     margin-top: 0;
   }
 
-  .social__list {
+  .social {
     margin-top: 0;
     max-width: 150px;
-    margin-left: 2px;
+    margin-left: -8px;
   }
 
   .social__item {
     text-align: center;
   }
 
-  .site-list a {
-    position: relative;
-    display: block;
-    padding: 15px 40px 13px 25px;
-    font-size: 18px;
-    line-height: 22px;
-    color: #011c40;
-  }
-
-  .site-list a:hover,
-  .site-list a:focus {
-    color: #ec9913;
-  }
-
-  .site-list {
-    display: none;
-    margin-top: 0;
-  }
-
-  .site-list.is-active {
-    display: block;
-    background-color: #f9fbfd;
-    padding: 70px 0 20px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 89%;
-  }
-
-  .site-list__item {
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-
-  .navigation-footer__list {
+  .navigation-footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1749,16 +1751,28 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 14px;
     max-width: 290px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 8px;
   }
 
-  .navigation-footer__item {
-    margin-bottom: 8px;
+  .navigation-footer .navigation-footer__item {
+    margin-top: 0;
+    margin-bottom: 18px;
   }
 
   .nojs .main-header__container {
     display: block;
+  }
+
+  .nojs.navigation ul {
+    position: static;
+    display: block;
+    background-color: #f9fbfd;
+    padding: 75px 30px 20px 15px;
+    margin-left: auto;
+    width: 98%;
   }
 }
 
@@ -1810,6 +1824,6 @@ button,
   }
 
   .form {
-    background-image: url("../../img/form-background@2x.webp");
+    background-image: url("../img/form-background@2x.webp");
   }
 }

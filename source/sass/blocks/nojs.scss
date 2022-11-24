@@ -9,3 +9,14 @@
 //     display: none;
 //   }
 // }
+
+.nojs.navigation ul {
+  @media (max-width: $vp-767) {
+    position: static;
+    display: block;
+    background-color: $color-font;
+    padding: 75px 30px 20px 15px;
+    margin-left: auto;
+    width: 98%;
+  }
+}

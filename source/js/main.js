@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // Открытие/закрытие меню
 
-const navList = document.querySelector('.site-list');
+const navList = document.querySelector('.navigation > ul');
 const menuOverlay = document.querySelector('.main-header__menu-overlay');
 
 document.querySelectorAll('.nojs').forEach((item) => item.classList.remove('nojs'));
@@ -43,12 +43,16 @@ const changesMenu = () => {
   });
 };
 
+const removeIsActive = () => {
+  const activeItems = document.querySelectorAll('.is-active');
+  activeItems.forEach((item) => {
+    item.classList.remove('is-active');
+  });
+};
+
 const closeMenu = () => {
   menuOverlay.addEventListener('click', () => {
-    const activeItems = document.querySelectorAll('.is-active');
-    activeItems.forEach((item) => {
-      item.classList.remove('is-active');
-    });
+    removeIsActive();
   });
 };
 
@@ -57,23 +61,20 @@ const closeMenuLink = () => {
 
   links.forEach((link) => {
     link.addEventListener('click', () => {
-      const activeItems = document.querySelectorAll('.is-active');
-      activeItems.forEach((item) => {
-        item.classList.remove('is-active');
-      });
+      removeIsActive();
     });
   });
 };
 
 // Move to block
 
-const anchors = document.querySelectorAll('a[href*="#"]');
+const anchors = document.querySelectorAll('a[href]');
 
 for (let anchor of anchors) {
   anchor.addEventListener('click', function (event) {
     event.preventDefault();
-    const blockID = anchor.getAttribute('href');
-    document.querySelector('' + blockID).scrollIntoView({
+    const blockId = anchor.getAttribute('href');
+    document.querySelector('' + blockId).scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
